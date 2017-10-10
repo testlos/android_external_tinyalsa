@@ -257,6 +257,10 @@ int pcm_get_poll_fd(struct pcm *pcm);
  */
 int pcm_set_avail_min(struct pcm *pcm, int avail_min);
 
+/* SPRD: add this function to support changing samplerate @{ */
+int pcm_set_samplerate(struct pcm *pcm, unsigned int flags, struct pcm_config *config, unsigned short samplerate);
+/* @} */
+
 /*
  * MIXER API
  */
